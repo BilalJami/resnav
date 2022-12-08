@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  background-color: beige;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  background-color: burlywood;
+}
+
+ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: beige;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(122, 36, 234);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+  .active {
+    display: block;
+  }
+  ul {
+    widows: 100%;
+    display: none;
+  }
+  ul li {
+    display: block;
+    text-align: center;
+  }
+}
